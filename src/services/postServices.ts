@@ -2,7 +2,9 @@ import { FetchedPost } from "../types"
 
 const API_URL = import.meta.env.VITE_API_URL
 
+
 export const getPostList = (pageSize: number = 5, page: number, category: string | undefined) => {
+    console.log(API_URL)
     let getPostListUrl = `${API_URL}api/post?take=${pageSize}&skip=${page * pageSize}`
     if(category != undefined) getPostListUrl += `&category=${category}` 
     return fetch(getPostListUrl)
