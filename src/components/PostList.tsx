@@ -25,8 +25,8 @@ const PostList = ({ pageSize, category }: { pageSize: number, category?: string 
                 && postList.length > 0
                 && postList.map((post, index) => {
                     return (
-                        <div key={post.id}>
-                            <PostCard post={post} className="mb-5" />
+                        <div key={post.id} className="w-full">
+                            <PostCard post={post} className="mb-5 w-full" />
                             {index < postList.length - 1 && <hr />}
                         </div>
                     )

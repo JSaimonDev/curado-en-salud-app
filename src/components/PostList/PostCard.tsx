@@ -10,7 +10,7 @@ interface PostCardProps {
 const PostCard = ({ post, className }: PostCardProps) => {
     const noQuoteContent = post.content.replace(/^"|"$/g, '')
     return (
-        <Link to={`post/${post.id}`}>
+        <Link to={`post/${post.id}`} className="w-full">
             <article className={`${className} w-full flex md:flex-row flex-col-reverse gap-6 overflow-hidden md:aspect-[9/2] line-clamp-3`}>
                 <div className="md:basis-2/3 flex flex-col lg:gap-y-3 md:gap-y-[1.2vw] gap-y-2">
                     <p className="text-main font-bold lg:text-base md:text-[1.7vw] md:leading-[3.2vw] text-base">
