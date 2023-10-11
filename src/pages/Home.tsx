@@ -5,7 +5,7 @@ const PAGE_SIZE = 5
 
 const Home = () => {
     return (
-        <main className="w-full flex justify-center h-full">
+        <main className="w-full flex flex-col justify-center h-full grow bg-greyBg items-center">
             <Seo
                 description="Vive más, vive mejor. Todo lo que necesitas saber sobre salud, nutrición y fitness."
                 title="Sano Sanote"

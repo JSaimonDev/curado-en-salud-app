@@ -14,7 +14,7 @@ function App() {
         <BrowserRouter>
           <div className='min-h-[100vh] flex flex-col'>
             <Header />
-            <div className='font-openSans text-lg bg-greyBg h-full grow'>
+            <div className='font-openSans text-lg bg-greyBg h-full grow flex flex-col'>
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='post/:id' element={<SinglePostPage />} />

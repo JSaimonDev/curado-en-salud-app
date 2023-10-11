@@ -7,7 +7,7 @@ const Category = () => {
     const { category } = useParams()
 
     return (
-        <main className="w-full flex justify-center h-full">
+        <main className="w-full flex flex-col justify-center h-full grow bg-greyBg items-center">
             <Seo
                 description={`Artículos y recursos sobre ${category}. Encuentra información y consejos útiles para llevar una vida más saludable y activa.`}
                 title={`Sano Sanote - ${category}`}
