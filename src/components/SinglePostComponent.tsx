@@ -1,5 +1,6 @@
 import DOMPurify from "dompurify";
 import { FetchedPost } from "../types";
+import { toFirstLetterCapital } from "../utils";
 
 interface SinglePostProps {
     post: FetchedPost
@@ -13,10 +14,10 @@ const SinglePost = ({ post, className }: SinglePostProps) => {
             <article className={`${className} h-full w-full flex flex-col-reverse gap-6 max-w-[700px] py-10 px-4`}>
                 <div className="h-full md:basis-2/3 flex flex-col lg:gap-y-3 md:gap-y-[1.2vw] gap-y-2">
                     <p className="text-main font-bold lg:text-base md:text-[1.7vw] md:leading-[3.2vw] text-base">
-                        {post.category.name}
+                        {toFirstLetterCapital(post.category.name)}
                     </p>
                     <h2 className="lg:text-3xl md:text-[3.3vw] md:leading-[3.8vw] text-2xl sm:text-3xl">
-                        {post.title}
+                        {toFirstLetterCapital(post.title)}
                     </h2>
                     <div>
                         <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(noQuoteContent) }}

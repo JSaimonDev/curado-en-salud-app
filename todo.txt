@@ -1,4 +1,3 @@
-Arreglar fetching continuo single post
 Arreglar mayuscula categorias
 Arreglar fallo paginacion
 Arreglar responsive
