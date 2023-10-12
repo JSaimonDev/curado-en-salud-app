@@ -1,3 +1,2 @@
-Arreglar mayuscula categorias
 Arreglar fallo paginacion
 Arreglar responsive
