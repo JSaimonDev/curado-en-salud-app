@@ -8,10 +8,6 @@ h1, h2, h3, h4 {
   @apply font-josefineSans font-bold
 }
 
-.customContainer {
-  @apply w-[900px]
-}
-
 /* Single post */
 .content > p {
   @apply text-base mb-8
