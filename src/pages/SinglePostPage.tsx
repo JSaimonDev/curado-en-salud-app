@@ -11,7 +11,7 @@ const IndividualPost = () => {
 
     useEffect(() => {
         id && getPost(id, setPost)
-    }, [id, post])
+    }, [id])
 
     return (
         <div className="h-full">
