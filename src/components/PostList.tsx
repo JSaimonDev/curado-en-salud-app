@@ -19,20 +19,20 @@ const PostList = ({ pageSize, category }: { pageSize: number, category?: string 
     }, [page, numberOfPages, pageSize, category])
 
     return (
-            <div className="w-full max-w[900px] flex flex-col gap-6 bg-white p-6 md:p-16 grow justify-center items-center">
-                {postList
-                    && postList.length > 0
-                    && postList.map((post, index) => {
-                        return (
-                            <div key={post.id} className="w-full">
-                                <PostCard post={post} className="mb-5 w-full" />
-                                {index < postList.length - 1 && <hr />}
-                            </div>
-                        )
-                    })
-                }
-                <Pagination page={page} numberOfPages={numberOfPages} setPage={setPage} />
-            </div>
+        <div className="w-full max-w-[900px] flex flex-col gap-6 bg-white p-6 md:p-16 grow justify-center items-center">
+            {postList
+                && postList.length > 0
+                && postList.map((post, index) => {
+                    return (
+                        <div key={post.id} className="w-full">
+                            <PostCard post={post} className="mb-5 w-full" />
+                            {index < postList.length - 1 && <hr />}
+                        </div>
+                    )
+                })
+            }
+            <Pagination page={page} numberOfPages={numberOfPages} setPage={setPage} />
+        </div>
     );
 }
 
