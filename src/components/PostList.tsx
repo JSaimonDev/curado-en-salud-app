@@ -19,7 +19,7 @@ const PostList = ({ pageSize, category }: { pageSize: number, category?: string 
     }, [page, numberOfPages, pageSize, category])
 
     return (
-        <div className="w-full max-w-[900px] flex flex-col gap-6 bg-white p-6 md:p-16 grow justify-center items-center">
+        <div className="w-full max-w-[900px] flex flex-col gap-6 bg-white p-6 md:p-16 grow justify-between items-center">
             {postList
                 && postList.length > 0
                 && postList.map((post, index) => {

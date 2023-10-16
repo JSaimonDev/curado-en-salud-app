@@ -17,7 +17,7 @@ const PostCard = ({ post, className }: PostCardProps) => {
                     <p className="text-main font-bold lg:text-base md:text-[1.7vw] md:leading-[3.2vw] text-base">
                         {toFirstLetterCapital(post.category.name)}
                     </p>
-                    <h2 className="lg:text-3xl md:text-[3.3vw] md:leading-[3.8vw] text-2xl sm:text-3xl">
+                    <h2 className="lg:text-3xl md:text-[3.3vw] md:leading-[3.8vw] text-3xl">
                         {toFirstLetterCapital(post.title)}
                     </h2>
                     <div>
@@ -26,7 +26,7 @@ const PostCard = ({ post, className }: PostCardProps) => {
                     </div>
                 </div>
                 <div className="md:basis-1/3">
-                    <img src={post.featuredImage} alt={post.altFeaturedImage} />
+                    <img src={post.featuredImage} alt={post.altFeaturedImage} width={660} />
                 </div>
             </article>
         </Link>
