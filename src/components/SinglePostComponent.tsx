@@ -25,7 +25,7 @@ const SinglePost = ({ post, className }: SinglePostProps) => {
                     </div>
                 </div>
                 <div className="md:basis-1/3">
-                    <img src={post.featuredImage} alt={post.altFeaturedImage} width='772' />
+                    <img src={post.featuredImage} alt={post.altFeaturedImage} width={772} height={515} />
                 </div>
             </article>
         </main>

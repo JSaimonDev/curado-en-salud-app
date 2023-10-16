@@ -26,7 +26,7 @@ const PostCard = ({ post, className }: PostCardProps) => {
                     </div>
                 </div>
                 <div className="md:basis-1/3">
-                    <img src={post.featuredImage} alt={post.altFeaturedImage} width={660} />
+                    <img src={post.featuredImage} alt={post.altFeaturedImage} width={660} height={440} />
                 </div>
             </article>
         </Link>
