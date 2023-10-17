@@ -8,7 +8,7 @@ const Home = () => {
         <main className="w-full flex flex-col justify-center h-full grow bg-greyBg items-center">
             <Seo
                 description="Vive más, vive mejor. Todo lo que necesitas saber sobre salud, nutrición y fitness."
-                title="Sano Sanote"
+                title="ViveOnFit"
             />
             <PostList pageSize={PAGE_SIZE} />
         </main>
