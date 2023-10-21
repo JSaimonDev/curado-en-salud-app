@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Turn as Hamburger } from "hamburger-react"
 import { useState } from "react";
+import logo from '../../assets/logo-texto-curadoensalud.svg';
+
 
 const Header = () => {
     const [showNavBar, setShowNavbar] = useState(false)
@@ -9,7 +11,7 @@ const Header = () => {
             <div className="w-full flex justify-between md:justify-center items-center md:pb-6 pt-6 font-bold  text-greyDark2">
                 <Link to=''>
                     <h1 className="md:text-6xl text-4xl sm:text-5xl">
-                        Vive<span className="text-main">On</span>Fit
+                        <img src={logo} height={150} width={150*16/9} className='fill-main'/>
                     </h1>
                 </Link>
                 <div className="md:hidden">

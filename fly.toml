@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for viveonfit-app on 2023-10-17T10:22:31+07:00
+# fly.toml app configuration file generated for curadoensalud-app on 2023-10-20T23:47:08+07:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "viveonfit-app"
+app = "curadoensalud-app"
 primary_region = "mad"
 
 [build]
