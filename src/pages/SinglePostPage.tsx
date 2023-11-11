@@ -17,7 +17,7 @@ const IndividualPost = () => {
         <div className="h-full">
             <Seo
                 description={post?.description}
-                title={`ViveOnFit - ${post?.title}`}
+                title={`Curado en salud - ${post?.title}`}
             />
             {post
                 ? <SinglePostComponent post={post} />

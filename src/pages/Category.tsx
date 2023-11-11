@@ -10,7 +10,7 @@ const Category = () => {
         <main className="w-full flex flex-col justify-center h-full grow bg-greyBg items-center">
             <Seo
                 description={`Artículos y recursos sobre ${category}. Encuentra información y consejos útiles para llevar una vida más saludable y activa.`}
-                title={`ViveOnFit - ${category}`}
+                title={`Curado en salud - ${category}`}
             />
             <PostList pageSize={PAGE_SIZE} category={category} />
         </main>
